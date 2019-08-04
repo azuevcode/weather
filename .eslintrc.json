@@ -29,6 +29,9 @@
       "no-confusing-arrow": "off",
       "arrow-body-style": "off",
       "no-restricted-syntax": "off",
-      "no-plusplus": "off"
+      "no-plusplus": "off",
+      "camelcase": "off",
+      "react/button-has-type": "off",
+      "react/jsx-one-expression-per-line": "off"
     }
 }

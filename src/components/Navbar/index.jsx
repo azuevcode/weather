@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Nav, NavLink } from './styles';
 
 const routes = [
   { to: '/today', label: 'Today' },
@@ -8,10 +8,14 @@ const routes = [
 
 const Navbar = () => {
   const links = routes.map(({ to, label }) => {
-    return <NavLink exact to={to} key={to}>{label}</NavLink>;
+    return (
+      <NavLink exact to={to} key={to}>
+        {label}
+      </NavLink>
+    );
   });
 
-  return <nav>{ links }</nav>;
+  return <Nav>{ links }</Nav>;
 };
 
 export default Navbar;
